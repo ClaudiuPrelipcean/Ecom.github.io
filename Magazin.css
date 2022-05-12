@@ -1,0 +1,468 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titlu{
+    color: aqua;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: larger;
+    
+    
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+   display: inline-block;
+    margin-right: 20px;
+} 
+a {
+    text-decoration: none;
+    color: #555;
+    
+}
+a i{
+    color: black;
+}
+ul li a:hover{
+   
+    border-radius: 2px;
+    padding: auto;
+    border-bottom: 3px solid #4fb2da;
+   
+
+}
+p{
+    color:#555;
+}
+.container{
+    max-width: 1700px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    
+
+}
+.col-2 h1{
+    font-size: 50px;
+    margin: 25px 0px;
+}
+.btn{
+  
+    background: linear-gradient(to bottom right, rgb(18, 88, 145), #479ead62);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    box-shadow: 2px 2px 2px #87c9da;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    margin: 30px 0;
+  }
+  .btn:active{
+      box-shadow: 0 0 0 #4fb2da;
+      transform: translate(2px,2px);
+  }
+  .btn:hover{
+      background: #4fb2da;
+  }
+  .header
+  {
+      background: radial-gradient(#FFF,rgb(222, 238, 241));
+  }
+  .header .row {
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  .categories{
+margin: 70px 0;
+
+  }
+  .col-3
+  {
+      flex-basis: 30%;
+      min-width: 250px;
+      margin-bottom: 30px;
+  }
+  .col-3 img{
+      width: 100%;
+      border: 5px solid #555;   
+
+  }
+  .col-3 p{
+      text-align: left;
+      font-weight: bold;
+  }
+  .fpret{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .fpret h4{
+      font-weight: bold;
+      font-size: 20px;
+  }
+  .add-cart{
+     
+      width: 100%;
+      background-color: darkgray;
+      transition: all 0.3s ease-in-out;
+      opacity: 0;
+      cursor: pointer;
+      text-align: center;
+   
+      
+  }
+  .col-3:hover .cart1,
+  .col-3:hover .cart2,
+  .col-3:hover .cart3
+  {
+bottom: 50px;
+opacity: 1;
+padding: 10px;
+text-decoration: none;
+  }
+
+  .small-container{
+      max-width: 1080px;
+      margin: auto;
+      
+  }
+  .col-4{
+      flex-basis: 25%;
+      padding: 10px;
+      min-width: 200px;
+      margin-bottom: 50px;
+      
+  }
+  .col-4 img{
+      width: 100%;
+      transition-duration: 0.5s;
+      padding-right: 20px;
+  }
+  .title
+  {
+      text-align: center;
+      margin: 0 auto 80px;
+      position: relative;
+      line-height: 60px;
+      color: #555;
+  }
+  .title::after{
+      content: ' ';
+      background: rgb(18, 88, 145);
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  h4{
+      color: rgb(48, 48, 48);
+      font-weight: normal;
+
+  }
+  .col-4 p{
+font-size: 14px;
+  }
+  .col-4:hover{
+      transform: translateY(-5px);
+      transition-duration: 0.5s;
+  }
+  body{
+      min-height: 100vh; /*------For footer to stick to bottom-------*/
+  }
+  /*-----------footer-----------*/
+  .footer{
+      background: black;
+      color: #8a8a8a;
+      font-size: 15px;
+      padding: 60px 0 20px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      position: sticky;  /*------For footer to stick to bottom-------*/
+      width: 100%; 
+      top:100%;
+    
+  }
+  .footer h3{
+      color: #FFF;
+      margin-bottom: 20px;
+
+
+  }
+  .footer-col-1, .footer-col-2, .footer-col-3
+  {
+      min-width: 300px;
+      margin-bottom: 20px;
+  }
+ ul{
+     list-style-type: none;
+ }
+ .footer-col-3 i{
+     font-size: 35px;
+     margin-bottom: 5px;
+ }
+ .footer hr{
+     border: none;
+     background: #b5b5b5;
+     height: 1px;
+     margin: 20px 0;
+ }
+ .footer-col-1 li, .footer-col-2 li{
+     padding-bottom: 10px;
+ }
+ .icon-menu{
+     margin-left: 20px;
+     display: none;
+ }
+ 
+/*-----------------Produse----------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 3px solid #89bed3;
+    border-radius: 2px;
+    padding: 5px;
+}
+select:focus{        /*----Dupa ce selectezi sa nu apara negru---*/
+    outline: none;
+}
+
+
+ /*----Detalii produs---*/
+ .single-product{
+     margin-top: 80px;
+
+ }
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 33%;
+    cursor: pointer;
+}
+ /*----Cart items---*/
+.cart-page{
+    margin: 80px auto;
+    justify-content: space-around;
+    margin-top: 50px;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #FFF;
+    background-color: #4fb2da;
+    font-family: 'Poppins', sans-serif;
+    
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #4fb2da;
+    font-size: 12px;
+}
+.cart-info img{
+    width: 120px;
+    
+    margin-right: 5px;
+}
+
+.numeprod{
+color: #4fb2da;
+display: flex;
+flex-basis: 25%; 
+
+}
+.numeprod h5{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.cart-container{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 25px;
+    padding-top: 10px;
+    
+}
+.bar{
+    background-color: #4fb2da;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    color: #FFF;
+    font-weight: bold;
+    padding-top: 0;
+    
+    
+}
+.cart-box
+{display: flex;
+    flex-wrap: wrap;
+    flex-basis: 25%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    border-top: solid #333;
+    
+}
+.basketTotalContainer h4{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Poppins';
+}
+.basketTotalTitle{
+    width: 25%;
+    
+}
+.basketTotal{
+    width: 15%;
+    
+}
+.cart-container total{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.cart-box span{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+ /*-----------Media Query Meniu----------*/
+ @media only screen and (max-width:800px)
+ {
+     nav ul{
+         position:absolute;
+         top:70px;
+         left: 0;
+         background: #333;
+         width: 100%;
+         overflow: hidden;
+         transition-duration: 0.5s;
+     }
+     nav ul li{
+         display: block;
+         margin-right: 50px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+
+     }
+     nav ul li a{
+         color :#FFF;
+     }
+     .icon-menu{
+         display: block;
+         cursor: pointer;
+     }
+ }
+ /*-----------Media Query Meniu <600px----------*/
+ @media only screen and (max-width:600px)
+ {
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+flex-basis: 100%;
+    }
+
+.single-product .row{
+    text-align: left;
+}
+.single-product .col-2{
+    padding: 20px 5px;
+}
+.single-product h1{
+font-size: 26px;
+line-height: 22px;
+}
+.small-container .row-2{
+    font-size: 12px;
+}
+ }
